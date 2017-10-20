@@ -56,3 +56,4 @@ Route::group(['prefix'=>'student'],function () {
     Route::get('{student_no}/score/{subject?}', ['as' => 'student.score', 'uses' => ' StudentController@getStudentData'
     ])->where(['subject' => '(chinese| english | math)']);
 });
+Route::ger('cool','Cool\TestController@index');

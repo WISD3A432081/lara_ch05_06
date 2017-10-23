@@ -60,3 +60,4 @@ Route::get('cool','Cool\TestController@index');
 Route::group(['namespace'=>'Cool'],function (){
     Route::get('cool','TestController@index');
 });
+Route::get('/board','BoardController@index');

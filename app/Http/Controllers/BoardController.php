@@ -1,13 +1,10 @@
 <?php
-
-namespace App;
-
-use Illuminate\Database\Eloquent\Model;
-
-class BoardController extends Model
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+class BoardController extends Controller
 {
-    public function index()
-    {
-        return view('board.blade.php');
+    //
+    public function getIndex(){
+        return view('board');
     }
 }
